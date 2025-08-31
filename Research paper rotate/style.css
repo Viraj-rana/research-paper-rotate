@@ -32,7 +32,7 @@ body {
 
 }
 
-.circle{
+.circle{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #ffef11;
     height: 195px;
     width: 195px;
@@ -45,6 +45,7 @@ body {
 }
 
 .circle button{
+    
     cursor:pointer;
     position: absolute;
     top: 50%;
@@ -132,23 +133,49 @@ nav ul li +li+li{
 }
 
 /* css for contact page */
-.Form{
-    display:grid;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 15px;             
-  max-width: 300px;  
-  margin: 0 auto; 
+.Form{  
+    
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            
+            border-radius: 5px;
+
 }
+textarea{
+      width: 50%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #099420;
+            border-radius: 5px;
+}
+   input[type="text"],
+        input[type="email"],
+        select {
+            width: 50%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #099420;
+            border-radius: 5px;
+        }
+
+
 
 body#value{
+    position: absolute;
+    left: 35.5%;
+    width: 60%;
+    justify-content:center;
+    align-items: center;
     background-color: #f5f106;
 
 }
 /* css for about page*/
 body#about{
     text-decoration-style: solid;
-    background-color: yellow;
+    /* background-color: yellow; */
     line-height: 1.9;
     
     padding: 50px;
@@ -156,5 +183,23 @@ body#about{
 }
 .container-form a{
     padding: 50px;
-    margin-top: 250px;
+    margin-top: 10px;
+} 
+/* 
+body#about button{
+    padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 14%;
+            
+} */
+
+body#about .container{
+    background-color: yellow;
+    height: 103vh;
+    width: 203vh;
+    margin: -53px;
 }
